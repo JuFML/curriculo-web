@@ -5,11 +5,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed; */
-	height: 100vh;
+	min-height: 100vh;
 }
 
 #banner-content {
-	height: 100%;
+	position: relative;
+	min-height: inherit;
 	background-color: #D0D2D4;
 	display: flex;
 	align-items: center;
@@ -132,7 +133,7 @@ h4 .verde {
 
 #scroll {
 	position: absolute;
-	bottom: 20px;
+	bottom: 0px;
 }
 
 #scroll i {
