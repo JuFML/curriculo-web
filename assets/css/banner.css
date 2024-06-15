@@ -45,7 +45,7 @@
 }
 
 .banner-content-left h2 {
-	font-family: cursive;
+	font-family: circular;
 
 	@media (max-width: 810px) {
 		font-size: 18px;
@@ -53,7 +53,7 @@
 }
 
 .banner-content-left h4 {
-	font-family: cursive;
+	font-family: circular;
 	margin: 10px 0 0 0;
 }
 
