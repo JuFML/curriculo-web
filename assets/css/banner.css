@@ -1,37 +1,88 @@
 /* BANNER
 ----------------------------------------------------- */
 #banner {
-	background: url(../img/banner.jpg) center;
+	/* background: url(../img/banner.jpg) center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed; */
 	height: 100vh;
 }
 
 #banner-content {
 	height: 100%;
-	background-color: rgba(26, 30, 35, 0.7);
+	background-color: #D0D2D4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	@media (max-width: 695px) {
+		align-items: initial;
+	}
+}
+
+.banner-content-left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+
+	@media (max-width: 810px) {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+
+}
+
+.banner-content-left img {
+	border-radius: 50%;
+	margin-bottom: 40px;
+	filter: saturate(0.5);
+
+	@media (max-width: 770px) {
+		scale: 78%;
+		margin-bottom: 0;
+	}
+}
+
+.banner-content-left h2 {
+	font-family: cursive;
+
+	@media (max-width: 810px) {
+		font-size: 18px;
+	}
+}
+
+.banner-content-left h4 {
+	font-family: cursive;
+	margin: 10px 0 0 0;
+}
+
+.banner-content-right {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+
+	@media (max-width: 890px) {
+		padding-left: 0;
+		height: 20%;
+	}
 }
 
 #banner-content h2 {
-	color: #f7f7f7;
+	color: #333;
 }
 
 #banner-content h1 {
 	font-size: 30pt;
 	margin-bottom: 16px;
 	text-align: center;
-	color: #bd7cb0;
+	color: #333;
 	margin-top: 10px;
 }
 
 #banner-content h1 .verde,
 h4 .verde {
-	color: #68c3a3;
+	color: #585656;
 }
 
 #banner-content p {
@@ -51,7 +102,7 @@ h4 .verde {
 }
 
 #redes-sociais {
-	margin-top: 40px;
+	margin-top: 12px;
 }
 
 #redes-sociais ul {
@@ -63,8 +114,8 @@ h4 .verde {
 }
 
 .social-icon {
-	width: 32px;
-	height: 32px;
+	width: 45px;
+	height: 45px;
 	padding: 10px;
 	border-radius: 50%;
 	display: flex;
@@ -93,9 +144,9 @@ h4 .verde {
 	color: #FFF;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 770px) {
 	#banner-content h1 {
-		font-size: 40pt;
+		font-size: 25pt;
 		margin: 20px 0 30px;
 	}
 	
@@ -103,4 +154,11 @@ h4 .verde {
 		background-color: rgba(82, 179, 217, 0.3);
 		transform: scale(1.5,1.5);
 	}
+}
+
+@media (max-width: 425px) {
+	#banner-content h1 {
+		font-size: 20pt;
+	}
+	
 }

@@ -25,13 +25,11 @@ p {
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-decoration: underline;
-	
-	
 }
 
 a{
 	text-decoration: none;
-	color: #009966;
+	color: #fff;
 }
 
 ul {
@@ -40,29 +38,33 @@ ul {
 	padding: 0;
 }
 .secao {
-	padding-top: 30px;
-	margin: 0 0 30px;
+	/* padding-top: 30px; */
+	/* margin: 0 0 30px; */
 }
 .secao-title-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	background-color: rgba(26, 30, 35, 0.7);
-	padding: 150px 0;
+	/* background-color: rgba(26, 30, 35, 0.7); */
+	padding: 40px 0;
 }
 .secao-title-content h2 {
-	color: #FFF;
+	color: #333;
 	font-size: 30pt;
 	letter-spacing: 2px;
 	text-align: center;
-	text-shadow: 0 0 10px #000;
+	text-shadow: 0 0 10px #9d9696;;
 }
 .secao-content {
 	padding: 20px 5vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.secao-content h4 {
+.secao-content p {
 	font-size: 20px;
+	line-height: 28px;
 }
 .secao-content .contact-title {
 	color: #1a1e23fc;
@@ -71,7 +73,7 @@ ul {
 	text-transform: none;
 }
 .secao-content .contact {
-	color: #7777777;
+	color: #2c2a2a77;
 	font-size: 14pt;
 	font-weight: 300;
 	text-transform: none;
@@ -116,11 +118,11 @@ ul {
 
 /* SEÇÃO PROJETOS
 ----------------------------------------------------- */
-#projetos .secao-title {
+/* #projetos .secao-title {
 	background: url(../img/bg-projetos.jpg) center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+} */
 .tabs {
 	display: flex;
 	justify-content: flex-start;
@@ -185,37 +187,56 @@ ul {
 }
 
 .projeto {
-	background: url(../img/banner.jpg) center;
+	/* background: url(../img/banner.jpg) center; */
 	background-size: 260px 210px;
-	width: 260px;
-	height: 210px;
+	width: 300px;
+	height: 240px;
 	margin: 10px;
 	border-radius: 10px;
 	transition: 0.8s;
 }
 
 #proj1 {
-	background-image: url(../img/projetos/devsla.png);
+	background-image: url(../img/projetos/starbucks.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #proj2 {
-	background-image: url(../img/projetos/starbucks.png);
+	background-image: url(../img/projetos/me-avalia.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #proj3 {
-	background-image: url(../img/projetos/awax.png);
+	background-image: url(../img/projetos/racha-conta.png);
+	background-repeat: no-repeat;	
+	background-size: 110%;
 }
 
 #proj4 {
-	background-image: url(../img/projetos/instagram.png);
+	background-image: url(../img/projetos/que-guardar.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #proj5 {
-	background-image: url(../img/projetos/netflix.png);
+	background-image: url(../img/projetos/ze-burguer.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #proj6 {
-	background-image: url(../img/projetos/dataanalytics.png);
+	background-image: url(../img/projetos/converter.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#proj7 {
+	background-image: url(../img/projetos/oye-vecino.jpg);
+	background-repeat: no-repeat;
+	background-size: 130%;
+    background-position: top;
 }
 
 
@@ -238,12 +259,12 @@ ul {
 	opacity: 1;
 }
 
-.projeto:hover {
+/* .projeto:hover {
 	background-size: 375px 300px;
-}
+} */
 
 .projeto:hover .projeto-titulo {
-	background-color: #68c3a3;
+	background-color: #333;
 }
 
 .projeto-content a {
@@ -258,7 +279,7 @@ ul {
 	align-items: center;
 	margin: 0;
 	height: 20%;
-	background-color: #68c3a3;
+	background-color: #919394;
 	border-radius: 0 0 10px 10px;
 	color: #FFF;
 	font-weight: bolder;

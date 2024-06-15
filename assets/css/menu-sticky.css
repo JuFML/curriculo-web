@@ -14,7 +14,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(26, 30, 35, 0.99);
+	background-color: #518472;;
 	position: relative;
 	width: 100%;
 	box-sizing: border-box;    
@@ -100,6 +100,12 @@
 	background-color: #304050;
 }
 
+.idiomas-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 .idiomas-btn ul {
 	display: flex;
 	justify-content: center;
@@ -112,7 +118,7 @@
 
 @media (min-width: 816px) {
 	#menu header {
-		justify-content: space-between;
+		/* justify-content: space-between; */
 		padding: 0 100px;
 		align-items: initial;
 	}
@@ -139,11 +145,17 @@
 		display: none;
 	}
 
+	.idiomas-btn {
+		display: flex;
+		justify-content: center;
+		padding: 10px 10px 0 0;
+	}
+
 	.idiomas-btn ul li {
 		margin: 5px 5px;
 	}
 
 	.idiomas-btn ul li img{
-		width: 20px;
+		width: 30px;
 	}
 }
