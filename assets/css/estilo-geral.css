@@ -285,6 +285,7 @@ ul {
 	font-weight: bolder;
 	font-size: 12pt;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 @media (min-width: 768px) {
